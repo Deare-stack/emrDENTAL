@@ -19,7 +19,7 @@ public class patients
 			//Class.forName(driverName);
 			Connection con = DriverManager.getConnection(url,user,password);
 			Statement stmt = con.createStatement();
-			String strSQL="select patient_id, fist_name, last_name, DOB from patients order by last_name";
+			String strSQL="select patient_id, fist_name, last_name, DOB from patients order by patient_id";
 			ResultSet rs = stmt.executeQuery(strSQL);
 			while(rs.next())
 			{
@@ -36,41 +36,103 @@ public class patients
 			switch (strChoice)
 			{
 				case "a":
-					System.out.println("===ADD===");
-					System.out.print("enter last_name: ");
-					String strLastname=input.next();
-					
-					System.out.print("enter first_name: ");
-					String strFirstname=input.next();
-					
-					System.out.print("enter patient's DOB (YYYY-MM-DD): ");
-					String strDOB=input.next();
+					// --- Add a new patient and patient history record ---
 
-					System.out.print("enter patient's age: ");
-					String strage=input.next();
+					// Prompt for patient details
+					System.out.println("\n=== ADD NEW PATIENT AND PATIENT HISTORY, AND OFFICE VISIT RECORD ===");
 
-					System.out.print("enter gender(Male/Female): ");
-					String strgender=input.next();
+					System.out.print("Enter first name: ");
+					String firstName = input.next();
 
-					System.out.print("enter patient's phone number: ");
-					String strphone=input.next();
+					System.out.print("Enter last name: ");
+					String lastName = input.next();
 
-					System.out.print("enter patient's email (for example patient1@example.com): ");
-					String stremail=input.next();
+					System.out.print("Enter DOB (YYYY-MM-DD): ");
+					String DOB = input.next();
 
-					System.out.print("enter patient's insurance: ");
-					String strinsurance=input.next();
+					System.out.print("Enter age: ");
+					int age = input.nextInt();
 
-					System.out.print("enter patient's doctor: ");
-					String strdoc=input.next();
+					System.out.print("Enter gender(Male/Female): ");
+					String gender = input.next();
 
-					strSQL = "INSERT INTO patients (last_name, fist_name, DOB, age, gender, phone, email, procedure_id, procedures, patient_history_id, patient_history, Insurance_provider, doctor, office_vist_date) " +
-							"VALUES ('" + strLastname + "', '" + strFirstname + "', '" + strDOB + "', " + strage + ", '"
-							+ strgender + "', '" + strphone + "', '" + stremail + "', null, null, null, null, '"
-							+ strinsurance + "', '" + strdoc + "', null)";
-					System.out.println("SQL: " + strSQL);
+					System.out.print("Enter phone number: ");
+					String phone = input.next();
+
+					System.out.print("Enter email: ");
+					String email = input.next();
+
+					System.out.print("Enter address: ");
+					input.nextLine();  // consume leftover newline
+					String address = input.nextLine();
+
+					System.out.print("Enter city: ");
+					String city = input.nextLine();
+
+					System.out.print("Enter state: ");
+					String state = input.nextLine();
+
+					System.out.print("Enter zip code: ");
+					int zip = input.nextInt();
+
+					// Insert new patient into the 'patients' table
+					String insertPatientSQL =
+							"INSERT INTO patients " +
+									"(fist_name, last_name, DOB, age, gender, phone, email, patients_address, patients_city, state_state, zip_code) " +
+									"VALUES ('" + firstName + "', '" + lastName + "', '" + DOB + "', " + age + ", '" + gender + "', '" + phone + "', '" + email + "', '" + address + "', '" + city + "', '" + state + "', " + zip + ")";
+
+					System.out.println("SQL: " + insertPatientSQL);
+					stmt.executeUpdate(insertPatientSQL, Statement.RETURN_GENERATED_KEYS);
+
+					// Get the generated patient_id
+					ResultSet generatedKeys = stmt.getGeneratedKeys();
+					int patientId = -1;
+					if (generatedKeys.next()) {
+						patientId = generatedKeys.getInt(1);  // patient_id of the newly added patient
+					}
+					generatedKeys.close();
+
+					// Now insert the patient history record into the 'patient_history' table
+					System.out.print("Enter history records: ");
+					input.nextLine();  // consume newline
+					String historyRecords = input.nextLine();
+
+					System.out.print("Enter Insurance provider: ");
+					String insurance = input.nextLine();
+
+					System.out.print("Enter doctor name: ");
+					String doctor = input.nextLine();
+
+					// Insert patient history into the 'patient_history' table
+					String insertHistorySQL =
+							"INSERT INTO patient_history " +
+									"(patient_id, patient_history_records, Insurance_provider, doctor) " +
+									"VALUES(" + patientId + ", '" + historyRecords + "', '" + insurance + "', '" + doctor + "')";
+
+					System.out.println("SQL: " + insertHistorySQL);
+					stmt.executeUpdate(insertHistorySQL);
+
+					// Prompt for office visit
+					System.out.print("Enter office visit date (YYYY-MM-DD HH:MM:SS): ");
+					String visitDate = input.nextLine();
+
+					System.out.print("Enter visit type: ");
+					String visitType = input.nextLine();
+
+					System.out.print("Enter note: ");
+					String note = input.nextLine();
+
+// Insert into office_visits
+					strSQL =
+							"INSERT INTO office_visits " +
+									"(office_vist_date, patient_id, visit_type, note) " +
+									"VALUES('" + visitDate + "', " + patientId + ", '" + visitType + "', '" + note + "')";
 					stmt.executeUpdate(strSQL);
-					System.out.println("Record added successfully.");
+
+					System.out.println("New office visit record added successfully.");
+
+// finally...
+					System.out.println("New patient and patient history record, and office visit records added successfully.");
 					break;
 					
 				case "u":
@@ -79,31 +141,31 @@ public class patients
 					int id=input.nextInt();
 					
 					System.out.print("enter new last_name or 'x' to skip: ");
-					strLastname=input.next();
+					lastName=input.next();
 					
 					System.out.print("enter new first_name or 'x' to skip: ");
-					strFirstname=input.next();
+					firstName=input.next();
 					
 					System.out.print("enter new DOB or 'x' to skip: ");
-					strDOB=input.next();
+					DOB=input.next();
 					
-					if (!strLastname.equals("x"))
+					if (!lastName.equals("x"))
 					{
-						strSQL="update patients set last_name='" + strLastname + "' where patient_id=" + id;
+						strSQL="update patients set last_name='" + lastName + "' where patient_id=" + id;
 						System.out.println(strSQL);
 						stmt.executeUpdate(strSQL);
 					}
 					
-					if (!strFirstname.equals("x"))
+					if (!firstName.equals("x"))
 					{
-						strSQL="update patients set fist_name='" + strFirstname + "' where patient_id=" + id;
+						strSQL="update patients set fist_name='" + firstName + "' where patient_id=" + id;
 						System.out.println(strSQL);
 						stmt.executeUpdate(strSQL);
 					}
 					
-					if (!strDOB.equals("x"))
+					if (!DOB.equals("x"))
 					{
-						strSQL="update patients set DOB='" + strDOB + "' where patient_id=" + id;
+						strSQL="update patients set DOB='" + DOB + "' where patient_id=" + id;
 						System.out.println(strSQL);
 						stmt.executeUpdate(strSQL);
 					}
