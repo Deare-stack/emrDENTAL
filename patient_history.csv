@@ -1,0 +1,101 @@
+patient_history_id,patient_id,patient_history_records,procedure_id,Insurance_provider,doctor,office_visit_id
+1,1,Patient underwent a routine cleaning; no complications noted.,1,Blue Cross,Matthew Smith,1
+2,2,Patient has a history of small cavities; discomfort noted prior to filling.,2,Medicare,Samantha Davies,2
+3,3,Severely decayed tooth removed after persistent pain.,3,Aetna,Tiffany Mitchell,3
+4,4,Patient experienced prolonged tooth pain; root canal successfully performed.,4,Medicare,Kevin Wells,4
+5,5,Damaged tooth restored with a crown after a fracture.,5,Aetna,Kathleen Hanna,5
+6,6,Missing tooth replaced with an implant; healing observed without complications.,6,UnitedHealthcare,Taylor Newton,6
+7,7,Impacted wisdom tooth removed due to recurrent infections.,7,Medicare,Kelly Olson,7
+8,8,Cosmetic treatment requested; significant improvement in tooth shade.,8,Cigna,Suzanne Thomas,8
+9,9,Patient concerned with tooth appearance; veneers placed for enhanced aesthetics.,9,Cigna,Daniel Ferguson,9
+10,10,Evaluation performed for malocclusion; braces recommended.,10,UnitedHealthcare,Heather Day,10
+11,11,Signs of gingivitis; scaling performed to remove plaque and tartar.,11,Medicare,John Duncan,11
+12,12,Patient missing one tooth; fixed bridge installed to restore function.,12,Medicare,Douglas Mayo,12
+13,13,Periodontal pockets noted; deep cleaning with root planing completed.,13,Cigna,Kenneth Fletcher,13
+14,14,High cavity risk; fluoride applied to strengthen enamel.,14,UnitedHealthcare,Theresa Freeman,14
+15,15,Molars sealed as a preventive measure against decay.,15,UnitedHealthcare,Roberta Stewart,15
+16,16,Uneven bite causing discomfort; occlusal adjustment performed.,16,Blue Cross,Maria Dougherty,16
+17,17,Moderate decay in a premolar; inlay restoration placed.,17,UnitedHealthcare,Erica Spencer,17
+18,18,Tooth damaged by decay; onlay used to restore structure.,18,Cigna,Justin Kim,18
+19,19,Minor chip on tooth repaired with bonding material.,19,Blue Cross,Justin Moore Jr.,19
+20,20,Routine screening completed; no abnormal lesions detected.,20,Cigna,Denise Galloway,20
+21,21,History of bruxism; custom night guard fitted to protect teeth.,21,Blue Cross,Krista Smith,21
+22,22,Active patient in contact sports; protective mouthguard provided.,22,Aetna,Gregory Smith,22
+23,23,Patient presented with gum disease; laser surgery used to reduce infection.,23,Aetna,Vanessa Newton,23
+24,24,Advanced periodontitis treated with comprehensive deep cleaning.,24,Aetna,Donna Martinez MD,24
+25,25,Previous root canal failure; retreatment performed successfully.,25,Medicare,Stephanie Kramer,25
+26,26,Cavity filled using amalgam due to extensive decay.,26,Medicare,Angela Contreras,26
+27,27,Excess gum tissue removed to expose more of the tooth structure.,27,Blue Cross,Wendy Glenn,27
+28,28,Receding gums corrected with a soft tissue graft.,28,UnitedHealthcare,James Ellis,28
+29,29,Bone augmentation performed in preparation for a dental implant.,29,Cigna,Jared Bruce Jr.,29
+30,30,Insufficient bone for implant; grafting completed to support future placement.,30,Aetna,Brandy Mitchell,30
+31,31,"After implant integration, a crown was placed for full restoration.",31,Cigna,Jacob Huynh,31
+32,32,Removable partial denture provided for missing teeth restoration.,32,UnitedHealthcare,Kristina Frazier,32
+33,33,Edentulous patient received full dentures for improved chewing function.,33,Medicare,John Hartman,33
+34,34,High-resolution digital radiographs taken during routine exam.,34,Medicare,Heather Garcia,34
+35,35,Comprehensive jaw and tooth structure imaged using panoramic radiography.,35,Blue Cross,Lynn Young,35
+36,36,Multiple bitewing images captured to assess interproximal decay.,36,Medicare,Emma Allison,36
+37,37,Custom occlusal guard provided to alleviate nocturnal bruxism.,37,Aetna,Laura Myers,37
+38,38,Patient complained of jaw pain; temporomandibular joint evaluated.,38,Aetna,Travis Parsons,38
+39,39,Minor occlusal discrepancies corrected for balanced bite.,39,Cigna,Christine Johnson,39
+40,40,Mobile teeth stabilized using a splint to prevent further movement.,40,Medicare,Emily Taylor,40
+41,41,Fixed dental prosthesis installed for improved masticatory function.,41,Cigna,William Reynolds,41
+42,42,Detailed intraoral images taken for comprehensive evaluation.,42,Cigna,Jennifer Carter,42
+43,43,Patient evaluated for caries susceptibility; preventive plan developed.,43,Cigna,Matthew Thomas,43
+44,44,Treatment applied to strengthen weakened enamel areas.,44,UnitedHealthcare,Mary Logan,44
+45,45,Dry mouth symptoms evaluated with a salivary flow assessment.,45,Medicare,Kristin Martinez,45
+46,46,Bacterial cultures taken to assess oral flora and disease risk.,46,Medicare,Daniel Murphy,46
+47,47,Acute dental pain managed promptly with emergency treatment.,47,Cigna,Emily Patterson,47
+48,48,Second opinion sought; comprehensive consultation performed.,48,Cigna,Heather Smith,48
+49,49,"Child patient received a gentle, routine dental checkup.",49,UnitedHealthcare,John Smith,49
+50,50,Previously sealed molars re-treated to ensure decay prevention.,50,Cigna,Cameron Young,50
+51,51,Sensitive teeth addressed with a specialized desensitizing agent.,51,Medicare,Vicki Nguyen,51
+52,52,Follow-up adjustment made to improve nightguard comfort and fit.,52,Aetna,Mary Moss,52
+53,53,Minor tooth reshaping performed to improve smile aesthetics.,53,Aetna,Alexander Garcia,53
+54,54,Excessive gum pigmentation lightened for a more uniform appearance.,54,UnitedHealthcare,Patrick Burns,54
+55,55,Subtle reshaping of tooth surfaces for improved symmetry.,55,Cigna,Kayla Powers,55
+56,56,Worn sealants repaired to restore full protective function.,56,UnitedHealthcare,Julia Cox,56
+57,57,Persistent tooth sensitivity managed with targeted desensitizing treatment.,57,Cigna,Penny Pruitt,57
+58,58,Standard exam performed; oral health was stable.,58,Aetna,Mrs. Lori Hurst PhD,58
+59,59,Digital impressions captured for restorative planning.,59,Aetna,Stephen Carr,59
+60,60,Laser technology used to enhance the effect of teeth whitening.,60,Aetna,Jacob Daniel,60
+61,61,Minimally invasive decay removal performed using air abrasion.,61,Aetna,Tyler Braun,61
+62,62,Minor contour adjustments improved overall tooth alignment.,62,UnitedHealthcare,Cindy Ellis,62
+63,63,Customized splint provided to manage jaw clenching and discomfort.,63,UnitedHealthcare,Megan Hahn,63
+64,64,Chipped dental veneer restored to improve aesthetics.,64,Cigna,Eric Kelly,64
+65,65,Routine follow-up after implant placement showed normal healing.,65,Medicare,Jennifer Larson,65
+66,66,Mini implants used for additional stabilization in a compromised area.,66,Medicare,William Hess,66
+67,67,Excessive gum bleeding addressed with targeted periodontal treatment.,67,Medicare,Patricia Dunn,67
+68,68,Regular periodontal visits scheduled to maintain gum health.,68,Cigna,Jack Jackson,68
+69,69,Comprehensive deep cleaning performed to remove heavy plaque buildup.,69,UnitedHealthcare,Jonathan Drake,69
+70,70,Periodontal pockets measured to guide further treatment planning.,70,Medicare,Ian Benitez,70
+71,71,Laser treatment applied to reduce inflamed periodontal tissues.,71,Blue Cross,Jamie Baker,71
+72,72,Preventive cleaning performed during a routine checkup.,72,Aetna,Erika Jackson,72
+73,73,Dye used to highlight plaque areas during the examination.,73,Cigna,Amanda Garcia,73
+74,74,Newly detected caries were promptly treated.,74,Aetna,Raven Wong,74
+75,75,Patient receiving treatment for chronic teeth grinding.,75,Aetna,Cynthia Scott,75
+76,76,Patient advised on proper interdental cleaning techniques to prevent decay.,76,UnitedHealthcare,Mark Padilla,76
+77,77,Standard examination; overall oral health remained good.,77,Blue Cross,Julie Ramirez,77
+78,78,Aesthetic composite resin used to restore a minor cavity.,78,Cigna,Jacob Rich,78
+79,79,Slight reshaping of tooth edges for improved function and appearance.,79,UnitedHealthcare,Mark Hartman Jr.,79
+80,80,Surgical intervention performed to manage advanced gum disease.,80,UnitedHealthcare,Timothy Baker,80
+81,81,Implant stability secured using a dental screw retention system.,81,Blue Cross,Lori Sanchez,81
+82,82,Patient received personalized oral care instructions to improve daily habits.,82,Aetna,Connie Boyd,82
+83,83,Conservative therapy initiated for temporomandibular joint discomfort.,83,Blue Cross,James Tucker,83
+84,84,Professional whitening session performed for immediate cosmetic improvement.,84,Cigna,Juan Acevedo,84
+85,85,Bonding procedure completed to mask minor aesthetic imperfections.,85,Medicare,Julie Finley,85
+86,86,Oral cyst excised after identification during routine imaging.,86,UnitedHealthcare,Miguel Parker,86
+87,87,Bone remodeling surgery performed to improve denture fit.,87,Aetna,Jermaine Peters,87
+88,88,Suspicious lesion biopsied; results pending further evaluation.,88,UnitedHealthcare,Lisa Edwards,88
+89,89,Laser used to reduce periodontal inflammation and promote healing.,89,Cigna,Matthew Walker,89
+90,90,Dentures fitted immediately following extractions for rapid restoration.,90,Blue Cross,Gregory Hansen,90
+91,91,Existing partial denture repaired for improved fit and function.,91,Medicare,Jessica Cruz,91
+92,92,Custom mouthguard provided to protect teeth during sports.,92,UnitedHealthcare,Robert Salazar,92
+93,93,Urgent extraction performed due to severe infection and pain.,93,Blue Cross,Kyle Patterson,93
+94,94,Patient explored restorative options with a prosthodontist.,94,Cigna,John Summers,94
+95,95,Full-arch restoration completed using the All-on-4 technique.,95,Aetna,Scott Grant,95
+96,96,Bite plate modified to improve occlusion and reduce discomfort.,96,Medicare,David Ruiz,96
+97,97,Sedation used to alleviate patient anxiety during extensive procedures.,97,Aetna,Kyle Smith,97
+98,98,Damaged crown repaired to restore proper function and appearance.,98,UnitedHealthcare,Jason Price,98
+99,99,Follow-up visit conducted to monitor recovery after surgery.,99,Blue Cross,Stephanie Clements,99
+100,100,Detailed post-op care instructions provided to ensure optimal healing.,100,Blue Cross,Stephanie Clements,100
