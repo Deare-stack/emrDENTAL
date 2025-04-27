@@ -9,7 +9,7 @@
 
 ### How to setup
 
-- please open readme_please.sql follow instruction to run the sql before run any of the three management classes (patients, PatientHistoryManagement, OfficeVisitsManagement).
+- Please open **readme_please.sql** follow instruction to run the sql before run any of the three management classes (patients, PatientHistoryManagement, OfficeVisitsManagement).
 
 ### Architecture & Tech Stack
 - Language: Java (JDBC, java.util.Scanner)
